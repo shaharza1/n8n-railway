@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM n8nio/n8n:1.41.0
 
 ARG N8N_VERSION=1.56.1
 

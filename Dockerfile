@@ -2,7 +2,6 @@ FROM n8nio/n8n:1.95.3
 
 USER root
 
-# התקנת החבילות דרך apk (כי Alpine)
 RUN apk add --no-cache graphicsmagick tzdata
 
 WORKDIR /data

@@ -1,4 +1,4 @@
-FROM n8nio/n8n:1.95.3
+FROM n8nio/n8n:latest
 
 USER root
 
@@ -12,4 +12,4 @@ ENV PORT=5678
 
 EXPOSE 5678
 
-CMD ["n8n", "start"]
+CMD ["node", "/usr/local/lib/node_modules/n8n/dist/index.js"]

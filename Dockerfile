@@ -12,4 +12,4 @@ ENV PORT=5678
 
 EXPOSE 5678
 
-CMD ["node", "/usr/local/lib/node_modules/n8n/dist/index.js"]
+CMD ["n8n"]

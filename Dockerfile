@@ -6,9 +6,10 @@ RUN apk add --no-cache graphicsmagick tzdata
 
 WORKDIR /data
 
-EXPOSE $PORT
-
 ENV N8N_USER_ID=root
 ENV N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
+ENV PORT=5678
 
-CMD export N8N_PORT=$PORT && n8n start
+EXPOSE 5678
+
+CMD ["n8n", "start"]
